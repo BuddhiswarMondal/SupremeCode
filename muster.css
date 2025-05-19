@@ -1,0 +1,86 @@
+        
+         *{/* Universal css start*/
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }/* Universal css end*/
+        
+         body{/* body tag css start*/
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }/* body tag css end*/ 
+        #page{/*page css start */
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns: 30% 60% 10%;
+            grid-template-rows: 10% 80% 10%;
+            
+        }/*page css end */
+        
+        /* #footer #h2 css start*/
+         #footer #h2{
+            color: white;
+            text-shadow: 5px 5px 5px black;
+            font-size: 20px;
+        }
+        /* #footer #h2 css end */   
+        
+        
+        @media screen and (max-width:1335px) {/* media quary css start*/
+           #header #h1{
+                font-size: 30px;
+                color: red;
+            }
+            
+        }
+        @media screen and (max-width:1200px) {
+          #header #h1{
+                font-size: 28px;
+                color: green;
+                
+            }
+            #footer #he{
+                font-size: 30px;
+            }
+            
+        }
+        @media screen and (max-width:740px) {
+          #header #h1{
+                font-size: 25px;
+                color: blue;
+                
+            }
+            input{
+                width: 100px;
+            }
+            label{
+                width: 100px;
+            }
+            
+        }/* media quary css start*/
+        
+       
+        #header{ /* #header css start */
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: .5px solid gray;
+            background-color: #aec;
+            opacity: .5;
+            grid-column: 1 / -1;
+            grid-row: 1 / 2;
+            order: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+        }/* #header css end */
+        
+        

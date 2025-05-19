@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set & Clear Interval</title>
+</head>
+<body>
+    <h1 id="h1">Hello Future World</h1>
+</body>
+<script>
+    var a=0;
+    var id= setInterval(function(){
+         a=a +1;
+         var x=document.getElementById("h1");
+         var c=x.style.color="red";
+        if(a==50){
+            clearInterval(id);
+            
+
+        }else{
+            if(c=="red"){
+                x.style.color="green";
+            }
+            x.style.fontSize= a + "px"; 
+            console.log(a);
+            console.log(c);
+        }
+        
+    }, 2000)
+</script>
+</html>

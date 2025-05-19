@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tense exam</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #page{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            width: 100vw;
+            height: 1000vh;
+            background-color: #eca;
+        }
+        #header{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            background-color: orange;
+            width: 100vw;
+            height: 50px;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            position: fixed;
+            top: 0;
+        }
+        #h1{
+            color: white;
+            font-size: 40px;
+            text-shadow: 5px 5px 5px black;
+
+        }
+        #mainbody{
+            width: 100vw;
+            box-sizing: border-box;
+            padding: 100px 50px;
+        }
+        h2{
+            font-size: 30px;
+        }
+        span{
+            font-size: 30px;
+            margin-right: 10px;
+        }
+        label{
+            font-size: 30px;
+        }
+        
+        .span{
+            border: 1px solid white;
+            padding: 2px 10px;
+        }
+        .section{
+            margin-bottom: 20px;
+            border: 5px inset aqua;
+            padding: 20px;
+        }
+        button{
+            padding: 10px;
+            font-size: 25px;
+        }
+        #output{
+            display: inline-block;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="page" class="page">
+        <header id="header" class="header">
+            <h1 id="h1" class="h1">All India Tense Examination</h1>
+        </header>
+        <div id="mainbody" class="mainbody">
+            <section id="section1" class="section">
+                <h2>Q.1)Tense কয় প্রকার?</h2>
+                <br>
+                <span>A.1)</span>
+                <span class="span"><input type="radio" name="answer1" value="One"><label for="">One</label></span>
+                <span class="span"><input type="radio" name="answer1" value="Two"><label for="">Two</label></span>
+                <span class="span"><input type="radio" name="answer1" value="Three"><label for="">Three</label></span>
+                <span class="span"><input type="radio" name="answer1" value="four"><label for="">Four</label></span>
+            </section>
+            <section id="section2" class="section">
+                <h2>Q.2)Present Tense কয় প্রকার?</h2>
+                <br>
+                <span>A.2)</span>
+                <span class="span"><input type="radio" name="answer2" value="One"><label for="">One</label></span>
+                <span class="span"><input type="radio" name="answer2" value="Two"><label for="">Two</label></span>
+                <span class="span"><input type="radio" name="answer2" value="Three"><label for="">Three</label></span>
+                <span class="span"><input type="radio" name="answer2" value="four"><label for="">Four</label></span>
+            </section>
+            <section id="section3" class="section">
+                <h2>Q.3)আমরা সারা দিন  কত প্রকার ভাবে কথা বলি?</h2>
+                <br>
+                <span>A.3)</span>
+                <span class="span"><input type="radio" name="answer"><label for="">One</label></span>
+                <span class="span"><input type="radio" name="answer"><label for="">Two</label></span>
+                <span class="span"><input type="radio" name="answer"><label for="">Three</label></span>
+                <span class="span"><input type="radio" name="answer"><label for="">Four</label></span>
+            </section>
+            <section id="section4" class="section">
+                <h2>Q.4)Present Indefinite  এর বাংলা মানে কি?</h2>
+                <br>
+                <span>A.4)</span>
+                <span class="span"><input type="radio" name="answer"><label for="">ঘটমান বর্তমান</label></span>
+                <span class="span"><input type="radio" name="answer"><label for="">পুরাঘটিত বর্তমান</label></span>
+                <span class="span"><input type="radio" name="answer"><label for="">পুরাঘটমান বর্তমান</label></span>
+                <span class="span"><input type="radio" name="answer"><label for="">নিত্য বর্তমান</label></span>
+            </section>
+            <section id="section5" class="section">
+                <h2>Q.5)Present Continuous  এর বাংলা মানে কি?</h2>
+                <br>
+                <span>A.5)</span>
+                <span class="span"><input type="radio" name="answer"><label for="">ঘটমান বর্তমান</label></span>
+                <span class="span"><input type="radio" name="answer"><label for="">পুরাঘটিত বর্তমান</label></span>
+                <span class="span"><input type="radio" name="answer"><label for="">পুরাঘটমান বর্তমান</label></span>
+                <span class="span"><input type="radio" name="answer"><label for="">নিত্য বর্তমান</label></span>
+            </section>
+            <section id="result" class="section">
+                <button onclick="result()">Click Me And See Your Result</button>
+                <input type="number" id="output" readonly>
+            </section>
+        </div>
+    </div>
+    <script>
+        function result(){
+            var data=document.getElementsByName("answer1");
+            var i;
+            for (i=0; i <=data.length; i++){
+                if(data[i].checked){
+                    alert(data[i].value);
+                }
+            }
+            
+            
+            
+               
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examination</title>
+    <link rel="stylesheet" href="a.css">
+    <style>
+        #mainbody{
+            display: grid;
+            grid-template-columns: 20% 80%;
+            
+        }
+        
+        
+       
+    </style>
+    <style>/* #mainbody #nav */
+         #mainbody #nav{
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+        }
+    </style>
+    <style> /* #mainbody #nav #a */
+        #mainbody #nav #a{
+            display: block;
+            box-sizing: border-box;
+            padding: 5px;
+            margin: 10px 0;
+            text-decoration: none;
+            text-align: center;
+            box-shadow: 2px -2px 2px black;
+            border-radius: 5px;
+            color: black;
+            background-color: white;
+        }
+        #mainbody #nav #a:hover{
+            display: block;
+            padding: 5px;
+            margin: 10px 0;
+            text-decoration: none;
+            text-align: center;
+            box-shadow: 2px -2px 2px blue;
+            border-radius: 5px;
+            color: white;
+            background-color: black;
+        }
+    </style>
+    <style>/* mainbody > .section */
+        #section{
+            padding: 25px;
+            margin: 0;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            background-color: seashell;
+            border: 1px solid tan;
+            overflow: scroll;
+            
+        }
+
+    </style>
+    <style>/* #section #sheet1 */
+        #section .sheet{
+            width: 100%;
+            height: 100%;
+            border: 1px solid tan;
+            padding: 20px;
+         }
+    </style>
+    <style>/* .line */
+        .line{
+            display: flex;
+            justify-content: space-around;
+            margin: 10px 0;
+        }
+
+    </style>
+    <style>/* #line input  .span button css*/
+        .line input{
+            padding: 5px;
+            text-align: center;
+            background-color: rgb(189, 136, 238);
+            color: white;
+            text-shadow: 1px 1px 1px black;
+            font-size: 15px;
+            letter-spacing: 1px;
+            width: 100px;
+            
+        }
+        .span{
+            padding:  5px;
+            text-align: center;
+            border: 1px solid gray;
+            width: 150px;
+        }
+        button{
+            padding: 5px;
+            
+        }
+        button:hover{
+            padding: 5px;
+            background-color: rgb(162, 245, 245);
+            border: 1px solid red;
+            
+        }
+        
+    </style>
+    
+   
+    
+
+</head>
+<body>
+    <div id="page" class="page">
+        <header id="header" class="header">
+            <h1 id="h1" class="h1">Examination Centre</h1>
+        </header>
+        <div id="mainbody" class="mainbody">
+            <nav id="nav" class="nav">
+                <a href="" id="a" class="a" onclick="total()"> Total Score</a>
+                <a href="" id="a" class="a">English Examination</a>
+                <a href="" id="a" class="a"></a>
+                <a href="" id="a" class="a"></a>
+                <a href="" id="a" class="a"></a>
+                <a href="" id="a" class="a"></a>
+                <a href="" id="a" class="a"></a>
+                <a href="" id="a" class="a"></a>
+                <a href="" id="a" class="a"></a>
+                <a href="" id="a" class="a"></a>
+            </nav>
+            <section id="section" class="section">
+                <div id="sheet1" class="sheet">
+                    <h3 id="h3">প্রঃ নিচের সমস্যাগুলির সমাধান বের করো?-</h3>
+                        <hr><hr>
+                    <div id="line1" class="line">
+                        
+                        
+                        <input type="number" value="789" readonly><span>+</span><input type="number" value="659" readonly><span>=</span><input type="number" id="input1" required><button onclick="result1()">click me</button><span id="result1" class="span">result</span><input type="number" id="output1" readonly>
+                    
+                        
+                    </div>
+                    <hr><hr>
+                    <div id="line2" class="line">
+                        <input type="number" value="799" readonly><span>+</span><input type="number" value="569" readonly><span>=</span><input type="number" id="input2" required><button onclick="result2()">click me</button><span id="result2" class="span">result</span><input type="number" id="output2" readonly>
+                    </div>
+                    <hr><hr>
+                    <div id="line3" class="line">
+                        <input type="number" value="999" readonly><span>+</span><input type="number" value="969" readonly><span>=</span><input type="number" id="input3" required><button onclick="result3()">click me</button><span id="result3" class="span">result</span><input type="number" id="output3" readonly>
+                    </div>
+                    <hr><hr>
+                    <div id="line4" class="line"></div>
+                    <div id="line5" class="line"></div>
+                    <div id="line6" class="line"></div>
+                    <div id="line7" class="line"></div>
+                    <div id="line8" class="line"></div>
+                    <div id="line9" class="line"></div>
+                    <div id="line10" class="line"></div>
+
+                  
+                </div>
+            </section>
+        </div>
+        <footer id="footer" class="footer"></footer>
+    </div>
+</body>
+
+<script>/* result1() */
+    function result1(){
+        var x=document.getElementById("input1");
+        var y=document.getElementById("result1");
+        var z=document.getElementById("output1"); 
+        
+        
+       
+         if(x.value==1448){
+            y.innerText="right answer";
+            y.style.border=" 1px solid green";
+            y.style.color="white";
+            y.style.fontSize="15px";
+            y.style.backgroundColor="green";
+            z.value=2;
+            
+        }else{
+            y.innerText="wrong answer";
+            y.style.border=" 1px solid red";
+            y.style.color="white";
+            y.style.fontSize="15px";
+            y.style.backgroundColor="red";
+            z.value=0;
+            
+        }
+       
+        
+    }
+</script>
+<script>/* result2() */
+    function result2(){
+        var x=document.getElementById("input2");
+        var y=document.getElementById("result2");
+        var z=document.getElementById("output2"); 
+       
+         if(x.value==1368){
+            y.innerText="right answer";
+            y.style.border=" 1px solid green";
+            y.style.color="white";
+            y.style.fontSize="15px";
+            y.style.backgroundColor="green";
+            z.value=2;
+        }else{
+            y.innerText="wrong answer";
+            y.style.border=" 1px solid red";
+            y.style.color="white";
+            y.style.fontSize="15px";
+            y.style.backgroundColor="red";
+            z.value=0;
+        }
+       
+        
+    }
+</script>
+<script>/* result3() */
+    function result3(){
+        var x=document.getElementById("input3");
+        var y=document.getElementById("result3");
+        var z=document.getElementById("output3"); 
+       
+         if(x.value==1968){
+            y.innerText="right answer";
+            y.style.border=" 1px solid green";
+            y.style.color="white";
+            y.style.fontSize="15px";
+            y.style.backgroundColor="green";
+            z.value=2;
+        }else{
+            y.innerText="wrong answer";
+            y.style.border=" 1px solid red";
+            y.style.color="white";
+            y.style.fontSize="15px";
+            y.style.backgroundColor="red";
+            z.value=0;
+        }
+       
+        
+    }
+</script>
+
+</html>

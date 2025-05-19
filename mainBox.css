@@ -1,0 +1,10 @@
+#mainBox{
+    width: 100vw;
+    height: 500px;
+    padding: 50px;
+    background-color: green;
+    display: flex;
+    cursor: pointer;
+    
+    
+}
