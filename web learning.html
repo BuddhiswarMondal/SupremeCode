@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learn HTML, CSS & JS</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f2f5;
+      color: #333;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+      background-color: #e0e0e0;
+    }
+    nav a {
+      text-decoration: none;
+      color: #4CAF50;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin-top: 20px;
+    }
+    h2 {
+      color: #4CAF50;
+    }
+    pre {
+      background: #eee;
+      padding: 15px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #ddd;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HTML, CSS & JavaScript Learning Hub</h1>
+    <p>Master the building blocks of the web</p>
+  </header>
+  
+  <nav>
+    <a href="#html">HTML</a>
+    <a href="#css">CSS</a>
+    <a href="#js">JavaScript</a>
+  </nav>
+
+  <section id="html">
+    <h2>HTML Basics</h2>
+    <p>HTML (HyperText Markup Language) structures web content. Here's a basic example:</p>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+  &lt;h1&gt; Who Are You &lt;/h1&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello World&lt;/h1&gt;
+    &lt;p&gt;Welcome to my website!&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+  </section>
+
+  <section id="css">
+    <h2>CSS Basics</h2>
+    <p>CSS (Cascading Style Sheets) styles HTML elements. Example:</p>
+    <pre>
+body {
+  background-color: lightblue;
+  font-family: Arial, sans-serif;
+}
+h1 {
+  color: navy;
+  text-align: center;
+}
+    </pre>
+  </section>
+
+  <section id="js">
+    <h2>JavaScript Basics</h2>
+    <p>JavaScript adds interactivity. Here's a basic script:</p>
+    <pre>
+&lt;script&gt;
+  function greet() {
+    alert("Hello, welcome to the site!");
+  }
+  window.onload = greet;
+&lt;/script&gt;
+    </pre>
+  </section>
+
+  <footer>
+    &copy; 2025 LearnWeb. All rights reserved.
+  </footer>
+</body>
+</html>

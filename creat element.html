@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            background-color: #cbc7c7;
+            
+        }
+        div{
+            background-color: #b2beb5;
+            align-self: center;
+            justify-self: center;
+            top: 100px;
+            width: 800px;
+            padding: 50px;
+            overflow: scroll;
+            resize: both;
+            
+            
+            
+        }
+    </style>
+    <style>
+        h1{
+            text-align: center;
+            color: #4169E1;
+        }
+        p{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div draggable="true">
+        <h1>What Is HTML?</h1>
+        <p onmouseenter="color()" onmouseleave="pre()">
+            HTML (HyperText Markup Language) is the standard language used to create and structure content on the web. It defines elements like headings, paragraphs, links, images, and more, using tags. HTML forms the backbone of web pages and works with CSS and JavaScript for styling and interactivity.
+
+        </p>
+    </div>
+</body>
+<script>
+    function color(){
+        var p=document.getElementsByTagName("p")[0];
+        p.style.color="gray";
+    }
+    function pre(){
+        var p=document.getElementsByTagName("p")[0];
+        p.style.color="black";
+    }
+</script>
+</html>

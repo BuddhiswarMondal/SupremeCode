@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>patarn First</title>
+    <style>/* Universal css*/
+         *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    </style>
+    <style>/* body tag css*/
+         body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            
+        }
+            
+    </style> 
+    <style>
+        #page{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+    <style>
+        .box{
+            width: 400px;
+            height: 400px;
+            box-sizing: border-box;
+            border: 4px inset blue;
+            box-shadow: 10px 10px 10px black;
+            padding: 20px;
+            margin: 20px;
+            display: inline-block;
+            
+           
+
+        }
+        .dsa{
+            border: 1px solid gray;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+   <div id="page">
+     <h1>Outer Loops Indicates How Many Lines Will Be Printed.</h1>
+    <h1>Inner Loops Indicates How Many Times Will Be Printed In A Row.</h1>
+   
+    <hr>
+<div id="box1" class="box">
+    <h1>This is DSA Example:</h1>
+    <h2>Here 4 Outer Lines And 4 Inner Lines:-</h2>
+    <h3>Same Number Is Printing  4 times in 4 lines:-</h3>
+    <div class="dsa">
+        <script>
+   // dsa first : outer line 4 and inner printing object 4
+   var n = 4;
+   for(var i=0; i<n; i++){
+    for(var j=0; j<n; j++){
+        document.write(j);
+    }
+    document.write("<br>");
+   }
+</script>
+</div><!--.dsa div end-->
+</div> <!--.box div end-->
+<div id="box2" class="box">
+    <h1>This is DSA Example:</h1>
+    <h2>Here 4 Outer Lines And 4 Inner Lines:-</h2>
+    <h3> A B C D is printing 4 times in 4 lines:-</h3>
+    <div class="dsa">
+        <script>
+   // dsa second : outer line 4 and inner printing object 4
+   var n = 4;  
+   for(var i=0; i<n; i++){
+    var num=65;
+    for(var j=0; j<n; j++){
+        
+        var ch =String.fromCharCode(num);
+        
+        
+        document.write(ch);
+        num=num+1;
+        
+        
+    }
+    document.write("<br>");
+   }
+</script>
+
+    </div><!--.dsa div end-->
+</div> <!--.box div end-->
+<div id="box3" class="box">
+    <h1>This is DSA Example:</h1>
+    <h2>Here 4 Outer Lines And 4 Inner Lines:-</h2>
+    <h3> Star is printing 4 times in 4 lines:-</h3>
+    <div class="dsa">
+        <script>
+   // dsa second : outer line 4 and inner printing object 4
+   var n = 4; var star ="*";
+   for(var i=0; i<n; i++){
+    for(var j=0; j<n; j++){
+        document.write(star);
+    }
+    document.write("<br>");
+   }
+</script>
+
+    </div><!--.dsa div end-->
+</div> <!--.box div end-->
+   </div><!--#page div end-->
+   <div id="box4" class="box">
+    <h1>This is DSA Example:</h1>
+    <h2>Here 4 Outer Lines And 4 Inner Lines:-</h2>
+    <h3> Number is printing Coutinuously in 4 lines:-</h3>
+    <div class="dsa">
+        <script>
+   // dsa second : outer line 4 and inner printing object 4
+   var n = 4; var num =65;
+   for(var i=0; i<n; i++){
+    for(var j=0; j<n; j++){
+        var ch=String.fromCharCode(num);
+        document.write(ch + " ");
+        num=num+1;
+    }
+    document.write("<br>");
+   }
+</script>
+
+    </div><!--.dsa div end-->
+</div> <!--.box div end-->
+   </div><!--#page div end-->
+
+</body>
+  
+</html>
