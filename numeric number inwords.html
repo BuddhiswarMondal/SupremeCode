@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>numeric number inwords</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #page{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            width: 100vw;
+            height: 100vh;
+            justify-items: center;
+        }
+        #pageCover{
+            width: 50%;
+            height: 100%;
+            background-color: #cccccc;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 10% 1fr 10%;
+            row-gap: 2px;
+            box-shadow: 4px 4px 8px black;
+            border: 2px solid gray;
+            
+        }
+        #header{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            background-color: #eeeeee;
+        }
+        #container{
+            padding: 20px;
+            margin: 0;
+            box-sizing: border-box;
+             width: 100%;
+            height: 100%;
+            background-color: #eeeeee;
+        }
+        #inputDiv{
+            box-shadow: 5px 5px 10px black;
+            padding: 20px;
+            margin: 0 10px;
+        }
+        #clickMe{
+            display: inline-block;
+            padding: 5px;
+            box-shadow: 2px 2px 4px black;
+            border-radius: 10px;
+            margin-left: 100px;
+        }
+        label{
+            font-size: 20px;
+            
+            
+        }
+        input{
+            padding: 5px;
+            text-align: center;
+            font-size: 20px;
+        }
+        #footer{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+             width: 100%;
+            height: 100%;
+            background-color: #eeeeee;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="page">
+        <div id="pageCover">
+            <header id="header">
+            <h1>Welcome To Numeric Number And Larn Spelling</h1>
+        </header>
+        <div id="container">
+            <h2>You can give me numeric value from 1 to 50 </h2>
+            <h2>I can transform that in words.Try please....</h2><br><br><br><br>
+            <div id="inputDiv"><label for="">Your Number</label> <span></span><input type="number"  id="yourNumber"><button id="clickMe">click me</button></div>
+            <br><br><br>
+            
+            <p id="outPut1"></p>
+            <p id="outPut2"></p>
+
+        </div><!--#container end-->
+        <footer id="footer">
+            <h1>Do You Know Whole Life Is A Mistrorious Math</h1>
+        </footer>
+        </div><!--#pageCover end-->
+    </div><!--#page end-->
+    <script>
+
+        var yourNumber=document.getElementById("yourNumber");
+        var button=document.getElementById("clickMe");
+        
+        button.addEventListener("click", function(){
+            var getNumberFromInput1=yourNumber.value;
+            var outPut1=document.getElementById("outPut1");
+            var outPut2=document.getElementById("outPut2");
+            
+            if(getNumberFromInput1>0 && getNumberFromInput1<51){//this is father if start
+                outPut1.innerText="You Have Given Me = " +  getNumberFromInput1;
+    // *** 1 to 10 spelling block start........
+                if(getNumberFromInput1>0 && getNumberFromInput1<11){//this is son if start
+                    if(getNumberFromInput1-1==0){ // this is first grandson if start
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = One."
+                    }else if(getNumberFromInput1-2==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = two."
+                    }else if(getNumberFromInput1-3==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Three."
+                    }else if(getNumberFromInput1-4==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Four."
+                    }else if(getNumberFromInput1-5==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Five."
+                    }else if(getNumberFromInput1-6==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Six."
+                    }else if(getNumberFromInput1-7==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Seven."
+                    }else if(getNumberFromInput1-8==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Eight."
+                    }else if(getNumberFromInput1-9==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Nine."
+                    }else{// this is first grandson else start
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Ten."
+                    }// this is first grandson else end
+        // *** 1 to 10 spelling block end........
+        // *** 11 to 20 spelling block start........
+                }else if(getNumberFromInput1>10 && getNumberFromInput1<21){
+                    if(getNumberFromInput1-11==0){ // this is first grandson if start
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Eleven."
+                    }else if(getNumberFromInput1-12==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Twelve."
+                    }else if(getNumberFromInput1-13==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Thirteen."
+                    }else if(getNumberFromInput1-14==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Fourteen."
+                    }else if(getNumberFromInput1-15==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Fifteen."
+                    }else if(getNumberFromInput1-16==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Sixteen."
+                    }else if(getNumberFromInput1-17==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Seventeen."
+                    }else if(getNumberFromInput1-18==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Eighteen."
+                    }else if(getNumberFromInput1-19==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Nineteen."
+                    }else{// this is first grandson else start
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Twenty."
+                    }// this is first grandson else end
+        // *** 11 to 20 spelling block end........
+        // *** 21 to 30 spelling block start........
+                }else if(getNumberFromInput1>20 && getNumberFromInput1<31){
+                    if(getNumberFromInput1-21==0){ // this is first grandson if start
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Twenty One."
+                    }else if(getNumberFromInput1-22==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Twenty Two."
+                    }else if(getNumberFromInput1-23==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Twenty Three."
+                    }else if(getNumberFromInput1-24==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Twenty Four."
+                    }else if(getNumberFromInput1-25==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Twenty Five."
+                    }else if(getNumberFromInput1-26==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Twenty Six."
+                    }else if(getNumberFromInput1-27==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Twenty Seven."
+                    }else if(getNumberFromInput1-28==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Twenty Eight."
+                    }else if(getNumberFromInput1-29==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Twenty Nine."
+                    }else{// this is first grandson else start
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Thirty."
+                    }
+        // *** 21 to 30 spelling block end........
+        // *** 31 to 40 spelling block start........
+                }else if(getNumberFromInput1>30 && getNumberFromInput1<41){
+                    if(getNumberFromInput1-31==0){ // this is first grandson if start
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Thirty One."
+                    }else if(getNumberFromInput1-32==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Thirty Two."
+                    }else if(getNumberFromInput1-33==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Thirty Three."
+                    }else if(getNumberFromInput1-34==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Thirty Four."
+                    }else if(getNumberFromInput1-35==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Thirty Five."
+                    }else if(getNumberFromInput1-36==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Thirty Six."
+                    }else if(getNumberFromInput1-37==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Thirty Seven."
+                    }else if(getNumberFromInput1-38==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Thirty Eight."
+                    }else if(getNumberFromInput1-39==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Thirty Nine."
+                    }else{// this is first grandson else start
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Forty."
+                    }
+        // *** 31 to 40 spelling block end........
+        // *** 41 to 50 spelling block start........
+                }else if(getNumberFromInput1>40 && getNumberFromInput1<50){
+                    if(getNumberFromInput1-41==0){ // this is first grandson if start
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Forty One."
+                    }else if(getNumberFromInput1-42==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Forty Two."
+                    }else if(getNumberFromInput1-43==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Forty Three."
+                    }else if(getNumberFromInput1-44==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Forty Four."
+                    }else if(getNumberFromInput1-45==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Forty Five."
+                    }else if(getNumberFromInput1-46==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Forty Six."
+                    }else if(getNumberFromInput1-47==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Forty Seven."
+                    }else if(getNumberFromInput1-48==0){
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Forty Eight."
+                    }else{// this is first grandson else start
+                        outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Forty Nine."
+                    }
+        // *** 41 to 50 spelling block end........
+                }/*else if(getNumberFromInput1>50 && getNumberFromInput1<61){
+
+                }else if(getNumberFromInput1>60 && getNumberFromInput1<71){
+
+                }else if(getNumberFromInput1>70 && getNumberFromInput1<81){
+
+                }else if(getNumberFromInput1>80 && getNumberFromInput1<91){
+
+                }else if(getNumberFromInput1>90 && getNumberFromInput1<100){
+
+                }*/else{ // this is son1 else start
+                    outPut2.innerText="I have changed your" + " "+ getNumberFromInput1 + " " + "into words as = Fifty."
+                }// this is son1 else end & this is son1 if else end
+            }else{// this is father else start
+                alert("You give me " + "" + getNumberFromInput1 + ". But it is out of renge.I can spell number from 1 to 50. Please entry right number.");
+            }// this is father else end
+            
+        })//this is end of function
+    </script>
+</body>
+</html>

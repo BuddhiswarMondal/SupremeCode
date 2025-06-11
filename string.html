@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string methode</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+            width: 100vw;
+            
+            box-sizing: border-box;
+            
+        }
+        #page{
+            margin: 0px;
+            padding: 0px;
+            width: 100vw;
+            height: 1000px;
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns: 50%;
+            grid-template-rows: 100px 800px 100px;
+            row-gap: 1px;
+            justify-content: center;
+        }
+        #header{
+            width: 100%;
+            height: 100%;
+            box-shadow: 2px 2px 8px black;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 100%;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+        #header  #h1{
+            text-align: center;
+            
+            color: #eeee;
+            text-shadow: 2px 2px 2px black;
+        }
+        #section{
+            width: 100%;
+            height: 100%;
+            border: 1px solid gray;
+           box-shadow: 2px 2px 8px black;
+           display: grid;
+           grid-template-columns: 30% 70%;
+           grid-template-rows: 100%;
+        }
+        #left{
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            padding: 5px;
+            transition: all 2s linear;
+            display: flex;
+            flex-flow: column;
+            gap: 2px;
+            overflow: auto;
+            
+        }
+        #left:hover{
+            box-shadow: 1px 1px 4px black;
+            
+        }
+        #left button{
+            display: block;
+            padding: 2px;
+            box-shadow: 1px 1px 1px black;
+            
+        }
+        #right{
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            padding: 5px;
+            transition: all 2s linear;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 100%;
+        }
+        #right:hover{
+            box-shadow: 1px 1px 4px black;
+        }
+       
+        #aboutLength{
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            padding: 20px;
+            border: 1px inset gray;
+            grid-column: 1/-1;
+            grid-row: 1/ -1;
+            visibility: hidden;
+            
+        }
+        #aboutLowerToUpper{
+            width: 100%;
+            height: 100%;
+            grid-column: 1/-1;
+            grid-row: 1/ -1;
+            visibility: hidden;
+            
+            
+        }
+        #about{
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            grid-column: 1/-1;
+            grid-row: 1/ -1;
+            visibility: hidden;
+
+            
+            
+            
+            
+        }
+        #imgBox{
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            grid-column: 1/-1;
+            grid-row: 1/ -1;
+            visibility: visible;
+
+        }
+        #imgBox img{
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+        }
+        
+        #footer{
+            width: 100%;
+            height: 100%;
+            box-shadow: 2px 2px 8px black;
+            text-align: center;
+            color: #e9e9e9;
+            text-shadow: 2px 2px 2px black, 4px 4px 4px aqua;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        ul{
+            margin: 20px;
+            border: 2px double gray;
+            overflow: auto;
+            height: 300px;
+            background-color: aliceblue;
+            border-radius: 10px;
+            box-shadow: 2px 2px 4px black;
+        }
+        ul li{
+            margin: 5px 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="page" class="page">
+        <header id="header" class="header">
+            <h1 id="h1" class="h1">Javascript String All Methode</h1>
+        </header><!--header end-->
+        <section id="section" class="section">
+            <div id="left" class="left">
+                <button id="bt1">string</button>
+                <button>length</button>
+                <button>toLowercase</button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+
+            </div><!--#left tag end-->
+            <div id="right" class="right">
+                <div id="aboutLength" class="about">
+                    <h2>About String Property Length:-</h2>
+                </div><!--#aboutLenth tag end-->
+                <div id="aboutLowerToUpper" class="about">
+                    
+                </div><!--#aboutLowerToUpper end-->
+                <div id="about" class="about">
+                    <h3>Welcome Javascript World And Learn About String:-</h3><br><br>
+                    <h4>Q)What is string?</h4>
+                    <p>A) String is a group of words or a word or a letter.</p>
+                    <p>You can manipulate string by Javascript methodes easily.</p>
+                    <p>There are many methodes. like...</p>
+                    <ul>
+                        <li>length</li>
+                        <li>toUpperCase</li>
+                        <li>toLowerCase</li>
+                        <li>indexOf</li>
+                        <li>lastIndexOf</li>
+                        <li>match</li>
+                        <li>include</li>
+                        <li>search</li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <p>You can learn all about these...</p>
+                    <p>Lets start.......</p>
+                </div><!--#about end-->
+                <div id="imgBox">
+                    <img src="ai.jpeg" alt="">
+                </div>
+
+            </div><!--#right tag end-->
+        </section>
+        <footer id="footer" class="footer">
+            <h1>Welcome bro....</h1>
+        </footer>
+    </div><!--#page end-->
+    <script>
+        document.getElementsByTagName("button")[0].addEventListener("click",about);
+        var x1=document.getElementById("aboutLength");
+        var x2=document.getElementById("aboutLowerToUpper");
+        var x3=document.getElementById("about");
+        var bt1=document.getElementsByTagName("button")[0];
+        var bt2=document.getElementsByTagName("button")[1];
+        function about(){
+            x3.style.zIndex=1;
+            x3.style.visibility="visible";
+            x3.style.backgroundColor='lightgreen';
+            x1.style.zIndex=0;
+            bt1.style.backgroundColor="lightgreen";
+            bt2.style.backgroundColor="";
+             
+              
+
+        }
+        document.getElementsByTagName("button")[1].addEventListener("click",aboutLength);
+        function aboutLength(){
+            x1.style.zIndex=1;
+            x1.style.visibility="visible";
+            x1.style.backgroundColor='lightgreen';
+            x3.style.zIndex=0;
+            bt1.style.backgroundColor="";
+            bt2.style.backgroundColor="lightgreen";
+             
+              
+
+        }
+    </script>
+    
+</body>
+</html>

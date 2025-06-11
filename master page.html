@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>master page design</title>
+    <style>/* universal css start */
+        
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    </style>
+    <style>/* body css start */
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            background-color: bisque;
+        }
+    </style>
+    <style> /* #masterPage css start */
+        #masterPage{
+            padding-top: 40px;
+            margin: 0;
+            width: 100vw;
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns: 1fr minmax(100px,500px) 1fr;
+            grid-template-rows: repeat(2,800px);
+            row-gap: 20px;
+        }
+    </style>
+    <style>/* page1 css start */
+        
+
+        #page1{
+            padding: 2px;
+            margin: 0;
+            box-sizing: border-box;
+            border: 2px solid #eeee;
+            box-shadow: 2px 2px 2px gray;
+            background-color: powderblue;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 20% 10% 50% 20%;
+            row-gap: 1px;
+
+        }
+
+    </style>
+    <style>/* page1 #header css start */
+        #header{
+            width: 100%;
+            height: 100%;
+            background-color: aliceblue;
+        }
+    </style>
+    <style>/* page1 #nav css start */
+        #nav{
+            width: 100%;
+            height: 100%;
+            background-color: rgb(196, 151, 238);
+        }
+    </style>
+    <style>/* page1 section css start */
+        #section{
+            width: 100%;
+            height: 100%;
+            background-color: rgb(247, 164, 240);
+        }
+    </style>
+    <style>/* page1 footer css start */
+        #footer{
+            width: 100%;
+            height: 100%;
+            background-color: aliceblue;
+        }
+    </style>
+    <style>
+        /* there page1 css end **********************************************************
+    </style>
+    <style>/* page2 css start */
+        #page2{
+            padding: 2px;
+            margin: 0;
+            box-sizing: border-box;
+            border: 2px solid #eeee;
+            box-shadow: 2px 2px 2px gray;
+            background-color: powderblue;
+            border-radius: 10px;
+            
+
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="masterPage" class="masterPage">
+        <div class="left">
+
+        </div><!--left ide end-->
+        <div id="page1" class="page1">
+            <header id="header" class="header">
+                <h1>page1 Header </h1>
+            </header>
+            <nav id="nav" class="nav">
+                <h1>nav bar</h1>
+            </nav>
+            <section id="section" class="section">
+                <h1>Body section</h1>
+            </section>
+            <footer id="footer" class="footer">
+                <h1>Footer section</h1>
+            </footer>
+
+        </div><!--page1 end-->
+        <div class="right">
+
+        </div><!--right side end-->
+
+        <!--page1 html end-->
+        <div class="left">
+
+        </div>
+        <div id="page2" class="page2">
+
+        </div><!--page2 end-->
+        <div class="right">
+
+        </div>
+        <!--page2 html end-->
+
+    </div><!--masterPage End-->
+</body>
+</html>

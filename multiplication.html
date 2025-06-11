@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication</title>
+    <style>
+        p{
+            padding: 20px 100px;
+            background-color: #cccccc;
+        }
+    </style>
+</head>
+<body>
+    <label for="">You Want To Multiplication , So Put Your Number Here :-</label><br>
+    <input type="number" id="numberInput"><button>Click me</button>
+    <p id="display"></p>
+    <script>
+        
+            
+            document.getElementsByTagName("button")[0].addEventListener("click",function(){
+                var getNumber=document.getElementById("numberInput").value;
+            var pureNumber=Number(getNumber);
+                var p=document.getElementsByTagName("p")[0];
+                p.innerHTML="You Put = " + pureNumber  +""+"and your multifications are :-<br>" 
+                + pureNumber + "*" + "1 =" + pureNumber*1 + "<br>"
+                 + pureNumber + "*" + "2 =" + pureNumber*2 + "<br>"
+                 + pureNumber + "*" + "3 =" + pureNumber*3 + "<br>"
+                 + pureNumber + "*" + "4 =" + pureNumber*4 + "<br>"
+                 + pureNumber + "*" + "5 =" + pureNumber*5 + "<br>"
+                 + pureNumber + "*" + "6 =" + pureNumber*6 + "<br>"
+                 + pureNumber + "*" + "7 =" + pureNumber*7 + "<br>"
+                 + pureNumber + "*" + "8 =" + pureNumber*8 + "<br>"
+                 + pureNumber + "*" + "9 =" + pureNumber*9 + "<br>"
+                 + pureNumber + "*" + "10 =" + pureNumber*10 + "<br>";
+
+
+            })
+        
+
+    </script>
+</body>
+</html>

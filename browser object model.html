@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>browser object model</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #page{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            width: 100vw;
+            height: 1000px;
+            display: grid;
+            grid-template-columns: 100vw;
+            grid-template-rows: 5% 1fr 5%;
+            row-gap: 2px;
+        }
+        #header{
+            box-shadow: 2px 2px 8px black;
+        }
+        h1{
+            text-align: center;
+        }
+        #section{
+            width: 100vw;
+            height: 100%;
+            box-sizing: border-box;
+            padding: 50px;
+            /*display: grid;
+            grid-template-columns: 300px 1fr;
+            grid-template-rows: 100%;*/
+        }
+        .div{
+            border: 1px solid #cccccc;
+            padding: 10px;
+            margin: 10px 0;
+            box-shadow: 2px 2px 8px black;
+            position: relative;
+        }
+        .shortDiv{
+            height: 5px;
+            background-color: aqua;
+        }
+        #arrowBox{
+            
+            
+            display: inline-block;
+            width: 10px;
+            height: 20px;
+            padding: 1px;
+            background-color: #cccccc;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            cursor: pointer;
+            border-radius: 2px;
+        }
+        .blueArrowBox{
+            background-color: blue;
+        }
+        #circle{
+            width: 100%;
+            height: 30%;
+            background-color: blue;
+            border-radius: 1px;
+            position: relative;
+            bottom: 0;
+        }
+        h2{
+            padding: 10px;
+            margin: 10px 0;
+        }
+        p{
+            padding: 5px;
+            margin: 10px 0;
+        }
+        ul{
+            margin: 10px 20px;
+        }
+        ul li{
+            margin: 5px 20px;
+        }
+        #footer{
+            box-shadow: 2px 2px 8px black;
+        }
+    </style>
+</head>
+<body>
+    <div id="page" class="page">
+        <header id="header" class="header">
+            <h1>Welcome To Javascript Browser Object Model</h1>
+
+        </header>
+        <section id="section" class="section">
+            <div id="div1" class="div">
+                <div id="arrowBox">
+                    <div id="circle"></div>
+                </div>
+                <h2>Q.1) What is BOM or Browser object Model?</h2>
+                <p>A.1) The Browser Object Model provides JavaScript with the ability to interact with the browser itself, rather than just the content of the web page (which is handled by the DOM – Document Object Model).</p>
+            </div><!--#div1 end-->
+            <div id="div2" class="div">
+                <h2>Q.2) What can we do by BOM?</h2>
+                <p>A.2) With the Browser Object Model (BOM) in JavaScript, you can interact with the browser environment in ways that go beyond manipulating the web page’s content. Here's a breakdown of what you can do with the BOM:</p>
+                <ul>
+                    <h3>We Can Control Browser</h3>
+                    <li>Open and close window.</li>
+                </ul>
+                const newWindow = window.open("https://example.com", "_blank");
+                 newWindow.close();
+                 <ul>
+                    <h3>We can resize or move window</h3>
+                    <li>Rsize Or Move Window</li>
+                    window.resizeTo(800, 600);
+                    window.moveTo(100, 100);
+
+                 </ul>
+
+            </div><!--#div2 end-->
+
+        </section>
+        <footer id="footer" class="footer">
+            <h1>You Can Change The World A Little Bit.. </h1>
+        </footer>
+    </div><!--#page end-->
+    <script>
+        var target=document.getElementById("arrowBox");
+        target.addEventListener("click",function(){
+            var div=document.getElementById("div1");
+            div.classList.toggle("shortDiv");
+            var x=this.classList.toggle("blueArrowBox");
+            console.log(x);
+            
+            
+        })
+    </script>
+</body>
+</html>

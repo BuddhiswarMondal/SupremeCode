@@ -121,7 +121,7 @@
         </header>
         <div id="mainbody" class="mainbody">
             <nav id="nav" class="nav">
-                <a href="" id="a" class="a" onclick="total()"> Total Score</a>
+                <a href="" id="a" class="a" onclick=showResult()> Total Score</a>
                 <a href="" id="a" class="a">English Examination</a>
                 <a href="" id="a" class="a"></a>
                 <a href="" id="a" class="a"></a>
@@ -139,20 +139,23 @@
                     <div id="line1" class="line">
                         
                         
-                        <input type="number" value="789" readonly><span>+</span><input type="number" value="659" readonly><span>=</span><input type="number" id="input1" required><button onclick="result1()">click me</button><span id="result1" class="span">result</span><input type="number" id="output1" readonly>
+                        <input type="number" value="789" readonly><span>+</span><input type="number" value="659" readonly><span>=</span><input type="number" id="input1" required><button onclick="result1()">click me</button><span id="result1" class="span">result</span><input type="number" id="output1" placeholder="your score">
                     
                         
                     </div>
                     <hr><hr>
                     <div id="line2" class="line">
-                        <input type="number" value="799" readonly><span>+</span><input type="number" value="569" readonly><span>=</span><input type="number" id="input2" required><button onclick="result2()">click me</button><span id="result2" class="span">result</span><input type="number" id="output2" readonly>
+                        <input type="number" value="799" readonly><span>+</span><input type="number" value="569" readonly><span>=</span><input type="number" id="input2" required><button onclick="result2()">click me</button><span id="result2" class="span">result</span><input type="number" id="output2"  placeholder="your score" readonly>
                     </div>
                     <hr><hr>
                     <div id="line3" class="line">
-                        <input type="number" value="999" readonly><span>+</span><input type="number" value="969" readonly><span>=</span><input type="number" id="input3" required><button onclick="result3()">click me</button><span id="result3" class="span">result</span><input type="number" id="output3" readonly>
+                        <input type="number" value="999" readonly><span>+</span><input type="number" value="969" readonly><span>=</span><input type="number" id="input3" required><button onclick="result3()">click me</button><span id="result3" class="span">result</span><input type="number" id="output3"  placeholder="your score" readonly>
                     </div>
                     <hr><hr>
-                    <div id="line4" class="line"></div>
+                    <div id="line4" class="line">
+                        <input type="number" value="9909" readonly><span>+</span><input type="number" value="9789" readonly><span>=</span><input type="number" id="input4" required><button onclick="result4()">click me</button><span id="result4" class="span">result</span><input type="number" id="output4"  placeholder="your score" readonly>
+                    </div>
+                    <hr><hr>
                     <div id="line5" class="line"></div>
                     <div id="line6" class="line"></div>
                     <div id="line7" class="line"></div>
@@ -169,7 +172,7 @@
 </body>
 
 <script>/* result1() */
-    function result1(){
+  function result1(){
         var x=document.getElementById("input1");
         var y=document.getElementById("result1");
         var z=document.getElementById("output1"); 
@@ -245,6 +248,55 @@
         }
        
         
+    }
+</script>
+<script>/* result4() */
+    function result4(){
+        var x=document.getElementById("input4");
+        var y=document.getElementById("result4");
+        var z=document.getElementById("output4"); 
+       
+         if(x.value==19698){
+            y.innerText="right answer";
+            y.style.border=" 1px solid green";
+            y.style.color="white";
+            y.style.fontSize="15px";
+            y.style.backgroundColor="green";
+            z.value=2;
+        }else{
+            y.innerText="wrong answer";
+            y.style.border=" 1px solid red";
+            y.style.color="white";
+            y.style.fontSize="15px";
+            y.style.backgroundColor="red";
+            z.value=0;
+        }
+       
+        
+    }
+</script>
+<script>/* totl score()*/
+    function showResult(){
+      var x=document.getElementById("output1").value;
+       var y=document.getElementById("output2").value;
+       var z=document.getElementById("output3").value;
+       var a1=document.getElementById("output4").value; 
+       var a=Number(x);
+       var b=Number(y);
+       var c=Number(z);
+       var d=Number(a1);
+       var total = a+b+c+d;
+       if(total==8){
+        alert("You Are Excellent Guy. You Get Full Marks = "+ total)
+       }else{
+         alert("Youur Total Score is =" + total);
+       }
+     
+
+     
+       
+      
+      
     }
 </script>
 

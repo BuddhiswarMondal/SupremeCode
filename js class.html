@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js class</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #page{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            width: 100vw;
+            height: 1000px;
+            display: grid;
+            grid-template-columns: 100vw;
+            grid-template-rows: 50px 900px 50px;
+            row-gap: 2px;
+        }
+        #header{
+            box-shadow: 2px 2px 8px black;
+        }
+        h1{
+            text-align: center;
+        }
+        #section{
+            width: 100vw;
+            height: 900px;
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            grid-template-rows: 100%;
+        }
+        #nav{
+            width: 100%;
+            height: 100%;
+            border: 2px solid #e9e9e9;
+            box-sizing: border-box;
+            padding: 20px;
+            /*background-color: tan;*/
+            position: relative;
+            left: -300px;
+            box-shadow: 2px 2px 8px black;
+            overflow: auto;
+            border-radius: 5px;
+        }
+        #navControler{
+            width: 50px;
+            height: 50px;
+            padding: 10px;
+            box-sizing: border-box;
+            position: fixed;
+            top: 0px;
+            left: 2px;
+            border: 2px solid gray;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3,1fr);
+            row-gap: 5px;
+            cursor: pointer;
+            transition: all 1s linear;
+        }
+        .line{
+            background-color: black;
+        }
+        .bt{
+            display: block;
+            padding: 2px;
+            width: 100%;
+            margin: 5px 0px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            display: block;
+        }
+        #footer{
+            box-shadow: 2px 2px 8px black;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="page" class="page">
+        <header id="header" class="header">
+            <h1>Welcome Javascript World And Change The future</h1>
+            <div id="navControler">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div><!--#nav controler nd-->
+        </header>
+        <section id="section" class="section">
+            <nav id="nav" class="nav">
+                <button class="bt"><a href="string.html">js string methode</a></button>
+                <button class="bt"></button>
+                <button class="bt"></button>
+                <button class="bt"></button>
+                <button class="bt"></button>
+                <button class="bt"></button>
+                <button class="bt"></button>
+                <button class="bt"></button>
+                <button class="bt"></button>
+                <button class="bt">browser object model</button>
+            </nav>
+        </section>
+        <footer id="footer" class="footer">
+            <h1>You Can solve Many Problems Of The Human Kind</h1>
+        </footer>
+    </div><!--#page end-->
+    <script>
+        var x=document.getElementById("navControler");
+        var nav=document.getElementById("nav");
+        x.addEventListener("mouseover",navApper);
+         nav.addEventListener("mouseleave", navHide);
+        function navApper(){
+            var y=document.getElementById("nav");
+            y.style.left="1px";
+            y.style.transition="all 1s linear";
+        }
+        function navHide(){
+           
+            this.style.left="-300px";
+            this.style.transition="all 1s linear";
+        }
+    </script>
+    <script>// bt browser object model click and open 
+    var buttonBrowserObjectModel=document.getElementsByTagName("button")[9];
+    //console.log(buttonBrowserObjectModel);
+    buttonBrowserObjectModel.addEventListener("click", function(){
+        window.open("browser object model.html","","width=800px, height=500px, top=50px, left=50px")
+    })
+
+    </script>
+
+    
+</body>
+
+</html>
